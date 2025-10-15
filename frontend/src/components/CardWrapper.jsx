@@ -1,5 +1,6 @@
 import Card from "./Card";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const CardWrapper = ({ categories }) => {
   const [stocks, setStocks] = useState(categories.stocks);
@@ -29,12 +30,9 @@ const CardWrapper = ({ categories }) => {
       <h3>{categories.title}</h3>
       <div className="grid grid-cols-5 gap-4">
         {sortedStocks.map((stock, index) => (
-          <Card
-            key={index}
-            name={stock.name}
-            logo={stock.logo}
-            change={stock.change}
-          />
+          <Link to={`/instrument/${stock.name}`} key={index}>
+            <Card name={stock.name} logo={stock.logo} change={stock.change} />
+          </Link>
         ))}
       </div>
     </div>

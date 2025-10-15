@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Charts from "../components/Charts";
 import SidebarSingle from "../components/SidebarSingle";
-import { stock } from "../constants/account";
 import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
 
-const SinglePage = () => {
+const SinglePage = (stock) => {
   const [selectedStock, setSelectedStock] = useState(stock);
 
   const [oldPrice, setOldPrice] = useState(selectedStock.price); // merken des alten Preises

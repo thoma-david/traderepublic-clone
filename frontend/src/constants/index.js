@@ -3,7 +3,7 @@ export const stockPayFilters = ["Betrag", "Aktien"];
 export const navLinks = [
   { name: "Aufträge", path: "/" },
   { name: "Portfolio", path: "/portfolio" },
-  { name: "Profil", path: "/settings" },
+  { name: "Profil", path: "/profile" },
 ];
 
 export const categories = [
@@ -13,107 +13,54 @@ export const categories = [
       {
         logo: "https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/763px-Starbucks_Corporation_Logo_2011.svg.png",
         name: "Starbucks",
-        change: 18.6,
-      },
-      {
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1724px-Apple_logo_grey.svg.png",
-        name: "Apple",
-        change: 21.2,
-      },
-      {
-        logo: "https://companieslogo.com/img/orig/AMZN.D-13fddc58.png?t=1740113564",
-        name: "Amazon",
-        change: 11.2,
-      },
-      {
-        logo: "https://companieslogo.com/img/orig/RHM.F.D-fbcb7b2f.png?t=1720244493",
-        name: "Rheinmetall ",
-        change: -11.2,
-      },
-      {
-        logo: "https://static.vecteezy.com/system/resources/previews/020/975/565/large_2x/tesla-logo-tesla-icon-transparent-free-png.png",
-        name: "Tesla",
-        change: 10.4,
-      },
-      {
-        logo: "https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/763px-Starbucks_Corporation_Logo_2011.svg.png",
-        name: "Starbucks",
-        change: -18.6,
-      },
-      {
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1724px-Apple_logo_grey.svg.png",
-        name: "Apple",
-        change: 21.2,
-      },
-      {
-        logo: "https://companieslogo.com/img/orig/AMZN.D-13fddc58.png?t=1740113564",
-        name: "Amazon",
-        change: -11.2,
-      },
-      {
-        logo: "https://companieslogo.com/img/orig/RHM.F.D-fbcb7b2f.png?t=1720244493",
-        name: "Rheinmetall ",
-        change: 11.2,
-      },
-      {
-        logo: "https://static.vecteezy.com/system/resources/previews/020/975/565/large_2x/tesla-logo-tesla-icon-transparent-free-png.png",
-        name: "Tesla",
-        change: -10.4,
-      },
-    ],
-  },
-  {
-    title: "Top 10",
-    stocks: [
-      {
-        logo: "https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/763px-Starbucks_Corporation_Logo_2011.svg.png",
-        name: "Starbucks",
-        change: 18.6,
-      },
-      {
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1724px-Apple_logo_grey.svg.png",
-        name: "Apple",
-        change: 21.2,
-      },
-      {
-        logo: "https://companieslogo.com/img/orig/AMZN.D-13fddc58.png?t=1740113564",
-        name: "Amazon",
-        change: 11.2,
-      },
-      {
-        logo: "https://companieslogo.com/img/orig/RHM.F.D-fbcb7b2f.png?t=1720244493",
-        name: "Rheinmetall ",
-        change: -11.2,
-      },
-      {
-        logo: "https://static.vecteezy.com/system/resources/previews/020/975/565/large_2x/tesla-logo-tesla-icon-transparent-free-png.png",
-        name: "Tesla",
-        change: 10.4,
+        favorite: false,
+        id: "24023023bdsae23",
+        price: 42.81,
+        change: 0, // % Änderung
+        kpis: [
+          { title: "Marktkapitalisierung", value: "123,45 Mrd. €" },
+          { title: "KGV", value: "28,7" },
+          { title: "Dividendenrendite", value: "1,2 %" },
+          { title: "52-Wochen-Hoch", value: "150,00 €" },
+          { title: "52-Wochen-Tief", value: "90,00 €" },
+        ],
+        daydetail: [
+          { title: "Eröffnung", value: "100,00 €" },
+          { title: "Vortag", value: "120,00 €" },
+          { title: "Geld", value: "120,00 €" },
+          { title: "Brief", value: "120,00 €" },
+        ],
+        tags: ["USA", "Rohstoffe"],
+        isin: "VGG2662B1031",
+        wkn: "A40755",
+        description:
+          "Starbucks Corporation ist ein amerikanisches Unternehmen, das weltweit Kaffeehäuser betreibt. Gegründet wurde es 1971 in Seattle, Washington. Starbucks ist bekannt für seine hochwertigen Kaffeespezialitäten, Tees und Backwaren. Das Unternehmen hat sich zu einer globalen Marke entwickelt und betreibt Tausende von Filialen in verschiedenen Ländern. Starbucks legt großen Wert auf Nachhaltigkeit und soziale Verantwortung, indem es ethisch beschafften Kaffee verwendet und sich für Umweltschutzprojekte engagiert.",
       },
       {
         logo: "https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/763px-Starbucks_Corporation_Logo_2011.svg.png",
         name: "Starbucks",
-        change: -18.6,
-      },
-      {
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1724px-Apple_logo_grey.svg.png",
-        name: "Apple",
-        change: 21.2,
-      },
-      {
-        logo: "https://companieslogo.com/img/orig/AMZN.D-13fddc58.png?t=1740113564",
-        name: "Amazon",
-        change: -11.2,
-      },
-      {
-        logo: "https://companieslogo.com/img/orig/RHM.F.D-fbcb7b2f.png?t=1720244493",
-        name: "Rheinmetall ",
-        change: 11.2,
-      },
-      {
-        logo: "https://static.vecteezy.com/system/resources/previews/020/975/565/large_2x/tesla-logo-tesla-icon-transparent-free-png.png",
-        name: "Tesla",
-        change: -10.4,
+        favorite: false,
+        id: "24023023bdsae23",
+        price: 42.81,
+        change: 0, // % Änderung
+        kpis: [
+          { title: "Marktkapitalisierung", value: "123,45 Mrd. €" },
+          { title: "KGV", value: "28,7" },
+          { title: "Dividendenrendite", value: "1,2 %" },
+          { title: "52-Wochen-Hoch", value: "150,00 €" },
+          { title: "52-Wochen-Tief", value: "90,00 €" },
+        ],
+        daydetail: [
+          { title: "Eröffnung", value: "100,00 €" },
+          { title: "Vortag", value: "120,00 €" },
+          { title: "Geld", value: "120,00 €" },
+          { title: "Brief", value: "120,00 €" },
+        ],
+        tags: ["USA", "Rohstoffe"],
+        isin: "VGG2662B1031",
+        wkn: "A40755",
+        description:
+          "Starbucks Corporation ist ein amerikanisches Unternehmen, das weltweit Kaffeehäuser betreibt. Gegründet wurde es 1971 in Seattle, Washington. Starbucks ist bekannt für seine hochwertigen Kaffeespezialitäten, Tees und Backwaren. Das Unternehmen hat sich zu einer globalen Marke entwickelt und betreibt Tausende von Filialen in verschiedenen Ländern. Starbucks legt großen Wert auf Nachhaltigkeit und soziale Verantwortung, indem es ethisch beschafften Kaffee verwendet und sich für Umweltschutzprojekte engagiert.",
       },
     ],
   },
