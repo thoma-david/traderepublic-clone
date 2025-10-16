@@ -1,14 +1,22 @@
-const finnhub = require("finnhub");
+import express from "express";
+import dotenv from "dotenv";
 
-const finnhubClient = new finnhub.DefaultApi(
-  "d3npvmpr01qkgr8r992gd3npvmpr01qkgr8r9930"
-); // Replace this
+dotenv.config();
+console.log("Geladener API Key:", process.env.FINNHUB_API_KEY);
 
-// Basic financials
-finnhubClient.companyBasicFinancials(
-  "AAPL",
-  "margin",
-  (error, data, response) => {
-    console.log(data);
-  }
-);
+// Importiere deine Routen
+import stocksRoutes from "./routes/stocksRoutes.js";
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Middleware
+app.use(express.json()); // JSON-Parsing für POST-Requests
+
+// API-Routen registrieren
+app.use("/api/stocks", stocksRoutes);
+
+// Start des Servers
+app.listen(PORT, () => {
+  console.log(`Server läuft auf http://localhost:${PORT}`);
+});
